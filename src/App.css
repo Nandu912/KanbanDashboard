@@ -1,38 +1,82 @@
-.App {
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 10px;
+  max-height: calc(100vh - 200px); 
+  overflow-y: hidden;
+}
+
+.kanban-column {
+  flex: 1; 
+  min-width: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border:1px solid rgb(212, 207, 207);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.kanban-column h2 {
+  text-align: center;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 8px; 
+  font-size: 16px; 
+  border-radius: 4px;
+}
+
+.ticket-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px; 
+  margin-bottom: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px; 
+  font-size: 14px; 
+}
+
+.ticket-card h3 {
+  margin: 3px 0; 
+  font-size: 12px; 
+}
+
+.ticket-card p {
+  margin: 5px 0; 
+  font-size: 12px; 
+}
+
+.controls {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  padding: 6px; 
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin-right: 10px;
+  padding: 6px 12px; 
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid black; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #f0f0f0; 
 }
