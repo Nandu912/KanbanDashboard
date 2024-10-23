@@ -1,3 +1,23 @@
+# Kanban Board Application
+
+This is a React-based Kanban board application that allows users to organize and manage tasks. Tasks are grouped by status, priority, or assigned users, with sorting functionality.
+
+## Features
+
+- Group tasks by **status**, **user**, or **priority**.
+- Sort tasks by **priority** or **title**.
+- Display task counts next to each grouping.
+- Responsive design for a better viewing experience.
+
+## Tech Stack
+
+- **Frontend**: React.js
+- **Styling**: CSS
+
+## Deployment
+
+This project is deployed on [Vercel](https://vercel.com). You can view the live application [here](https://kanban-dashboard-seven.vercel.app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
